@@ -27,11 +27,14 @@ class Dashboard extends Component
         $conditions['status'] = 'SUCCESS';
         $successOrder = $transaction->totalOrder($datefilter,$conditions);
 
+        $bagikanLink =  env('FE_BASE_PATH','http://localhost:8081/').'toko/'.$shop['shop']['code'];
+
         return view('livewire.dashboard',[
             'totalOrder' => $totalOrder['data'] ?? 0,
             'waitingOrder' => $waitingOrder['data'] ?? 0,
             'failedOrder' => $failedOrder['data'] ?? 0,
             'successOrder' => $successOrder['data'] ?? 0,
+            'bagikanLink' => $bagikanLink
         ]);
     }
 }
