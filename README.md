@@ -45,6 +45,12 @@ after installation, run this laravel command
 php artisan key:generate
 php artisan migrate:fresh --seed
 ```
+
+then run this command
+```sh
+npm install && npm run dev
+```
+
 last, serve and run your laravel app
 ```sh
 php artisan serve
