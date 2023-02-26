@@ -1,0 +1,900 @@
+{
+	"info": {
+		"_postman_id": "45a41fc0-8e41-4017-b6db-ff42e17c3fca",
+		"name": "Motorcycle Shop",
+		"description": "HAR To Postman Generated Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9794972"
+	},
+	"item": [
+		{
+			"name": "FE",
+			"item": [
+				{
+					"name": "Transaction",
+					"item": [
+						{
+							"name": "History Order",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL1}}/api/transaction/7610b6f4-8ea3-4ca6-b32d-ac4a831ae1f0/historyorder",
+									"host": [
+										"{{baseURL1}}"
+									],
+									"path": [
+										"api",
+										"transaction",
+										"7610b6f4-8ea3-4ca6-b32d-ac4a831ae1f0",
+										"historyorder"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "successfully / 200",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseURL1}}/api/transaction/7610b6f4-8ea3-4ca6-b32d-ac4a831ae1f0/historyorder",
+											"host": [
+												"{{baseURL1}}"
+											],
+											"path": [
+												"api",
+												"transaction",
+												"7610b6f4-8ea3-4ca6-b32d-ac4a831ae1f0",
+												"historyorder"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "localhost:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 14 Feb 2023 15:36:50 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/7.4.33"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 14 Feb 2023 15:36:50 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "58"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"data\": [\n  {\n   \"id\": 22,\n   \"invoice_number\": \"14022023-I05Y-141849\",\n   \"total_qty\": \"1.00\",\n   \"total_amount\": \"25000.00\",\n   \"status\": \"WAITING\",\n   \"name\": \"Luthfi\",\n   \"email\": \"nugrahaazizluthfi@gmail.com\",\n   \"phone\": \"089507854000\",\n   \"address\": \"BTN Griya Nugratama\",\n   \"session_id\": \"7610b6f4-8ea3-4ca6-b32d-ac4a831ae1f0\",\n   \"created_at\": \"14 February 2023, 14:18:49\",\n   \"updated_at\": \"14 February 2023, 14:18:49\",\n   \"payment_id\": 10,\n   \"shop_id\": 1\n  },\n  {\n   \"id\": 23,\n   \"invoice_number\": \"14022023-E65L-141901\",\n   \"total_qty\": \"1.00\",\n   \"total_amount\": \"25000.00\",\n   \"status\": \"WAITING\",\n   \"name\": \"Luthfi\",\n   \"email\": \"nugrahaazizluthfi@gmail.com\",\n   \"phone\": \"089507854000\",\n   \"address\": \"BTN Griya Nugratama\",\n   \"session_id\": \"7610b6f4-8ea3-4ca6-b32d-ac4a831ae1f0\",\n   \"created_at\": \"14 February 2023, 14:19:01\",\n   \"updated_at\": \"14 February 2023, 14:19:01\",\n   \"payment_id\": 10,\n   \"shop_id\": 1\n  },\n  {\n   \"id\": 24,\n   \"invoice_number\": \"14022023-50cS-152012\",\n   \"total_qty\": \"2.00\",\n   \"total_amount\": \"70000.00\",\n   \"status\": \"WAITING\",\n   \"name\": \"Luthfi Aziz Nugraha\",\n   \"email\": \"developer.luthfi@gmail.com\",\n   \"phone\": \"081388055771\",\n   \"address\": \"BTN Griya Nugratama\",\n   \"session_id\": \"7610b6f4-8ea3-4ca6-b32d-ac4a831ae1f0\",\n   \"created_at\": \"14 February 2023, 15:20:12\",\n   \"updated_at\": \"14 February 2023, 15:20:12\",\n   \"payment_id\": 9,\n   \"shop_id\": 1\n  }\n ],\n \"meta\": null,\n \"message\": \"History List Order data successfully loaded\",\n \"responsecode\": 200\n}"
+								}
+							]
+						},
+						{
+							"name": "Get Transaction",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL1}}/api/transaction/14022023-E65L-141901",
+									"host": [
+										"{{baseURL1}}"
+									],
+									"path": [
+										"api",
+										"transaction",
+										"14022023-E65L-141901"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "successfully / 200",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseURL1}}/api/transaction/14022023-E65L-141901",
+											"host": [
+												"{{baseURL1}}"
+											],
+											"path": [
+												"api",
+												"transaction",
+												"14022023-E65L-141901"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "localhost:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 14 Feb 2023 15:22:36 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/7.4.33"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 14 Feb 2023 15:22:36 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "58"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"data\": {\n  \"id\": 23,\n  \"invoice_number\": \"14022023-E65L-141901\",\n  \"total_qty\": \"1.00\",\n  \"total_amount\": \"25000.00\",\n  \"status\": \"WAITING\",\n  \"name\": \"Luthfi\",\n  \"email\": \"nugrahaazizluthfi@gmail.com\",\n  \"phone\": \"089507854000\",\n  \"address\": \"BTN Griya Nugratama\",\n  \"session_id\": \"7610b6f4-8ea3-4ca6-b32d-ac4a831ae1f0\",\n  \"created_at\": \"14 February 2023, 14:19:01\",\n  \"updated_at\": \"14 February 2023, 14:19:01\",\n  \"payment_id\": 10,\n  \"shop_id\": 1,\n  \"shop\": {\n   \"id\": 1,\n   \"name\": \"Luthfi Shop\"\n  },\n  \"payment\": {\n   \"id\": 10,\n   \"name\": \"Gopay\",\n   \"image\": \"logogopay.png\",\n   \"type\": \"EMONEY\",\n   \"admin\": 1000\n  },\n  \"items\": [\n   {\n    \"id\": 9,\n    \"product_id\": 5,\n    \"transaction_id\": 23,\n    \"product_name\": \"SKINDOZE Calming Toner & Essence - 30 ml\",\n    \"price\": \"25000.00\",\n    \"qty\": 1,\n    \"amount\": \"25000.00\",\n    \"product\": {\n     \"id\": 5,\n     \"name\": \"SKINDOZE Calming Toner & Essence - 30 ml\",\n     \"image\": \"http://localhost:8000/app/image/CRgUet3aS9qBg2DfnXx2cilYL1M5WIckjn2a7Tlc.jpg\"\n    }\n   }\n  ]\n },\n \"meta\": null,\n \"message\": \"Transaction data successfully loaded\",\n \"responsecode\": 200\n}"
+								}
+							]
+						},
+						{
+							"name": "Create Transaction",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseURL1}}/api/transaction",
+									"host": [
+										"{{baseURL1}}"
+									],
+									"path": [
+										"api",
+										"transaction"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": " / 500",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseURL1}}/api/transaction",
+											"host": [
+												"{{baseURL1}}"
+											],
+											"path": [
+												"api",
+												"transaction"
+											]
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Host",
+											"value": "localhost:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 14 Feb 2023 13:24:34 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/7.4.33"
+										},
+										{
+											"key": "Content-type",
+											"value": "text/html; charset=UTF-8"
+										}
+									],
+									"cookie": [],
+									"body": "text/html; charset=UTF-8 content type is not supported in the response body"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Payment Method",
+					"item": [
+						{
+							"name": "Create Payment Method",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Content-Type",
+										"value": "multipart/form-data"
+									}
+								],
+								"url": {
+									"raw": "{{baseURL1}}/api/payment/method",
+									"host": [
+										"{{baseURL1}}"
+									],
+									"path": [
+										"api",
+										"payment",
+										"method"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "created / 201",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											},
+											{
+												"key": "Content-Type",
+												"value": "multipart/form-data"
+											}
+										],
+										"url": {
+											"raw": "{{baseURL1}}/api/payment/method",
+											"host": [
+												"{{baseURL1}}"
+											],
+											"path": [
+												"api",
+												"payment",
+												"method"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "localhost:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 14 Feb 2023 02:04:10 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/7.4.33"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 14 Feb 2023 02:04:10 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "58"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"data\": {\n  \"name\": \"Dan Dan\",\n  \"image\": \"metmep/logodandan.png\",\n  \"type\": \"SETORTUNAI\",\n  \"updated_at\": \"2023-02-14T02:04:10.000000Z\",\n  \"created_at\": \"2023-02-14T02:04:10.000000Z\",\n  \"id\": 3\n },\n \"meta\": null,\n \"message\": \"Payment Method successfully  created\",\n \"responsecode\": 201\n}"
+								}
+							]
+						},
+						{
+							"name": "List Payment Method",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL1}}/api/payment/method",
+									"host": [
+										"{{baseURL1}}"
+									],
+									"path": [
+										"api",
+										"payment",
+										"method"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "successfully / 200",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseURL1}}/api/payment/method",
+											"host": [
+												"{{baseURL1}}"
+											],
+											"path": [
+												"api",
+												"payment",
+												"method"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "localhost:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 14 Feb 2023 02:32:07 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/7.4.33"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 14 Feb 2023 02:32:07 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "59"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"data\": [\n  {\n   \"id\": 4,\n   \"name\": \"Bank Mandiri\",\n   \"image\": \"bank mandiri.png\",\n   \"type\": \"VA\",\n   \"created_at\": \"2023-02-14T02:24:55.000000Z\",\n   \"updated_at\": \"2023-02-14T02:24:55.000000Z\",\n   \"admin\": 1000,\n   \"type_admin\": \"NOMINAL\"\n  },\n  {\n   \"id\": 5,\n   \"name\": \"Bank BRI\",\n   \"image\": \"bank bri.jpg\",\n   \"type\": \"VA\",\n   \"created_at\": \"2023-02-14T02:24:55.000000Z\",\n   \"updated_at\": \"2023-02-14T02:24:55.000000Z\",\n   \"admin\": 1000,\n   \"type_admin\": \"NOMINAL\"\n  },\n  {\n   \"id\": 6,\n   \"name\": \"QRIS\",\n   \"image\": \"qrisimg.png\",\n   \"type\": \"QRIS\",\n   \"created_at\": \"2023-02-14T02:24:55.000000Z\",\n   \"updated_at\": \"2023-02-14T02:24:55.000000Z\",\n   \"admin\": 1000,\n   \"type_admin\": \"NOMINAL\"\n  },\n  {\n   \"id\": 7,\n   \"name\": \"Bank Mega Syariah\",\n   \"image\": \"logo_bsmi.png\",\n   \"type\": \"VA\",\n   \"created_at\": \"2023-02-14T02:24:55.000000Z\",\n   \"updated_at\": \"2023-02-14T02:24:55.000000Z\",\n   \"admin\": 1000,\n   \"type_admin\": \"NOMINAL\"\n  },\n  {\n   \"id\": 8,\n   \"name\": \"LinkAja\",\n   \"image\": \"linkaja.png\",\n   \"type\": \"EMONEY\",\n   \"created_at\": \"2023-02-14T02:24:55.000000Z\",\n   \"updated_at\": \"2023-02-14T02:24:55.000000Z\",\n   \"admin\": 1000,\n   \"type_admin\": \"NOMINAL\"\n  },\n  {\n   \"id\": 9,\n   \"name\": \"OVO\",\n   \"image\": \"ovologo.png\",\n   \"type\": \"EMONEY\",\n   \"created_at\": \"2023-02-14T02:24:55.000000Z\",\n   \"updated_at\": \"2023-02-14T02:24:55.000000Z\",\n   \"admin\": 1000,\n   \"type_admin\": \"NOMINAL\"\n  },\n  {\n   \"id\": 10,\n   \"name\": \"Gopay\",\n   \"image\": \"logogopay.png\",\n   \"type\": \"EMONEY\",\n   \"created_at\": \"2023-02-14T02:24:55.000000Z\",\n   \"updated_at\": \"2023-02-14T02:24:55.000000Z\",\n   \"admin\": 1000,\n   \"type_admin\": \"NOMINAL\"\n  }\n ],\n \"meta\": null,\n \"message\": \"Payment Method successfully loaded\",\n \"responsecode\": 200\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Shop Information",
+					"item": [
+						{
+							"name": "Shop Information",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL1}}/api/shop/information/BjVWFXNTmLzBz4P",
+									"host": [
+										"{{baseURL1}}"
+									],
+									"path": [
+										"api",
+										"shop",
+										"information",
+										"BjVWFXNTmLzBz4P"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "not found / 404",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseURL1}}/api/shop/information/BjVWFXNTmLzBz4P",
+											"host": [
+												"{{baseURL1}}"
+											],
+											"path": [
+												"api",
+												"shop",
+												"information",
+												"BjVWFXNTmLzBz4P"
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "localhost:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 14 Feb 2023 10:06:46 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/7.4.33"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 14 Feb 2023 10:06:46 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Access-Control-Allow-Methods",
+											"value": "POST, GET, OPTIONS, PUT, DELETE"
+										},
+										{
+											"key": "Access-Control-Allow-Credentials",
+											"value": "true"
+										},
+										{
+											"key": "Access-Control-Max-Age",
+											"value": "86400"
+										},
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "Content-Type, Authorization, X-Requested-With"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"noReff\": \"c339e3d2-e1a7-46e2-ae23-c077f77798a9\",\n \"rc\": 1004,\n \"message\": \"Page Not Found\",\n \"data\": null,\n \"meta\": null\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Products",
+					"item": [
+						{
+							"name": "Get One Product",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL1}}/api/shop/products/BjVWFXNTmLzBz4P/3",
+									"host": [
+										"{{baseURL1}}"
+									],
+									"path": [
+										"api",
+										"shop",
+										"products",
+										"BjVWFXNTmLzBz4P",
+										"3"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "successfully / 200",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseURL1}}/api/shop/products/BjVWFXNTmLzBz4P/3",
+											"host": [
+												"{{baseURL1}}"
+											],
+											"path": [
+												"api",
+												"shop",
+												"products",
+												"BjVWFXNTmLzBz4P",
+												"3"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "localhost:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 14 Feb 2023 01:32:00 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/7.4.33"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 14 Feb 2023 01:32:00 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "56"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"data\": null,\n \"meta\": null,\n \"message\": \"Product failed to loaded\",\n \"responsecode\": 200\n}"
+								}
+							]
+						},
+						{
+							"name": "Get All Product",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseURL1}}/api/shop/products/BjVWFXNTmLzBz4P",
+									"host": [
+										"{{baseURL1}}"
+									],
+									"path": [
+										"api",
+										"shop",
+										"products",
+										"BjVWFXNTmLzBz4P"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "successfully / 200",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseURL1}}/api/shop/products/BjVWFXNTmLzBz4P",
+											"host": [
+												"{{baseURL1}}"
+											],
+											"path": [
+												"api",
+												"shop",
+												"products",
+												"BjVWFXNTmLzBz4P"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "localhost:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 14 Feb 2023 01:32:23 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/7.4.33"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 14 Feb 2023 01:32:23 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "52"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"data\": [\n  {\n   \"id\": 5,\n   \"name\": \"SKINDOZE Calming Toner & Essence - 30 ml\",\n   \"price\": 25000,\n   \"stok\": 300,\n   \"image\": \"http://localhost:8000/app/image/CRgUet3aS9qBg2DfnXx2cilYL1M5WIckjn2a7Tlc.jpg\",\n   \"created_at\": \"13 February 2023, 14:50:55\"\n  },\n  {\n   \"id\": 4,\n   \"name\": \"JIMS HONEY JH NIKI WALLET DOMPET KARTU WANITA CARD HOLDER LANYARD - PEACH\",\n   \"price\": 45000,\n   \"stok\": 500,\n   \"image\": \"http://localhost:8000/app/image/LKdCrdGSF3retN9VWX7M7cMEB93mLDKX6nIP1yO3.jpg\",\n   \"created_at\": \"13 February 2023, 14:49:49\"\n  },\n  {\n   \"id\": 3,\n   \"name\": \"Sabun biore body foam refill - white 450ml\",\n   \"price\": 10000,\n   \"stok\": 2000,\n   \"image\": \"http://localhost:8000/app/image/xeCs5T9U1Us5sHBTLKQg3FvXwTBlFhqAX9529Ddn.jpg\",\n   \"created_at\": \"13 February 2023, 14:46:31\"\n  },\n  {\n   \"id\": 2,\n   \"name\": \"Tropicana Slim Skim Milk Coffee 500gr - Susu Turunkan Kolesterol\",\n   \"price\": 95333,\n   \"stok\": 100,\n   \"image\": \"http://localhost:8000/app/image/O9XLCe3aarfEgsOYXL7aJ0YPLT5TNKZ22YURYp73.jpg\",\n   \"created_at\": \"13 February 2023, 14:44:28\"\n  },\n  {\n   \"id\": 1,\n   \"name\": \"Slimsure -1Box 15s Diet Detox|Obat Kurus|Pelangsing|Pelancar BAB|Fiber\",\n   \"price\": 270000,\n   \"stok\": 100,\n   \"image\": \"http://localhost:8000/app/image/0ssRR0MHOmK1Mowfi3whiN5YbxM7uxg7fMRz7Sz0.jpg\",\n   \"created_at\": \"13 February 2023, 14:41:40\"\n  }\n ],\n \"meta\": {\n  \"totalData\": 5,\n  \"perPage\": 10,\n  \"currentPage\": 1\n },\n \"message\": \"Products successfully loaded\",\n \"responsecode\": 200\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Create Session",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseURL1}}/api/session/create",
+							"host": [
+								"{{baseURL1}}"
+							],
+							"path": [
+								"api",
+								"session",
+								"create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "successfully / 200",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseURL1}}/api/session/create",
+									"host": [
+										"{{baseURL1}}"
+									],
+									"path": [
+										"api",
+										"session",
+										"create"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 14 Feb 2023 11:46:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.33"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 14 Feb 2023 11:46:25 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "54"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"message\": \"The given data was invalid.\",\n \"errors\": {\n  \"session_id\": [\n   \"The session id has already been taken.\"\n  ]\n }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Logic Test",
+			"item": [
+				{
+					"name": "Logic Test Json Format",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "bookings_file",
+									"type": "file",
+									"src": "/home/midpc/Documents/json1.json"
+								},
+								{
+									"key": "workshops_file",
+									"type": "file",
+									"src": "/home/midpc/Documents/json2.json"
+								},
+								{
+									"key": "sort",
+									"value": "DESC",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL1}}/logictest",
+							"host": [
+								"{{baseURL1}}"
+							],
+							"path": [
+								"logictest"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL1",
+			"value": "http://localhost:8000",
+			"type": "any"
+		}
+	]
+}
